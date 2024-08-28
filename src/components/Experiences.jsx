@@ -44,7 +44,7 @@ function Experiences() {
   return (
     <>
       <div id="experiences" className=" px-40 pt-20">
-        <h1 className="text-5xl ">Experiences</h1>
+        <h1 className="text-5xl font-medium">Experiences</h1>
         <div className=" mt-20 ">
           {Experiences.map((experience) => {
             return (

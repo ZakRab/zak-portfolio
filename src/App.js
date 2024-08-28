@@ -4,7 +4,6 @@ import Intro from "./components/Intro.jsx";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import AnimatedCursor from "react-animated-cursor";
-import Header from "./components/Header";
 function App() {
   return (
     <div>

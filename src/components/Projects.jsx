@@ -60,7 +60,7 @@ function Projects() {
   return (
     <>
       <div id="projects" className="p-40">
-        <h1 className="text-5xl">Projects</h1>
+        <h1 className="text-5xl font-medium">Projects</h1>
         <div className="mt-10 grid gap-4 grid-cols-4">
           {projects.map((project) => {
             return (
