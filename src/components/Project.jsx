@@ -6,6 +6,7 @@ function Project({ title, description, techStack, githubLink }) {
       <a
         href={githubLink}
         target="_blank"
+        rel="noreferrer"
         className="text-3xl underline font-semibold"
       >
         {title}
