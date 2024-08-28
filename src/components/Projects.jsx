@@ -59,9 +59,9 @@ function Projects() {
   ];
   return (
     <>
-      <div className="p-40">
+      <div id="projects" className="p-40">
         <h1 className="text-5xl">Projects</h1>
-        <div className="mt-20 grid gap-4 grid-cols-4">
+        <div className="mt-10 grid gap-4 grid-cols-4">
           {projects.map((project) => {
             return (
               <Project

@@ -17,9 +17,9 @@ import {
 function Skills() {
   const ICON_SIZE = 100;
   return (
-    <div className="flex flex-col px-40 pt-20">
+    <section id="skills" name="skills" className="flex flex-col px-40 pt-20">
       <h1 className="text-5xl font-medium">Skills</h1>
-      <div className="grid gap-4 grid-cols-4 mt-10 justify-items-center">
+      <div className="grid  gap-y-28 grid-cols-4 mt-20 justify-items-center mb-20">
         <FaHtml5 className="" size={ICON_SIZE} />
         <FaGit size={ICON_SIZE} />
         <FaJava size={ICON_SIZE} />
@@ -33,7 +33,7 @@ function Skills() {
         <MdCode size={ICON_SIZE} />
         <BiLogoMongodb size={ICON_SIZE} />
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -4,7 +4,7 @@ import Intro from "./components/Intro.jsx";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import AnimatedCursor from "react-animated-cursor";
-
+import Header from "./components/Header";
 function App() {
   return (
     <div>
@@ -30,9 +30,15 @@ function App() {
           },
         ]}
       />
+      <div className="text-white fixed flex flex-col w-full space-evenly gap-4 z-50 opacity-50 font-thin mt-5 ml-5">
+        <a href="#skills">Skills</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#projects">Projects</a>
+      </div>
+
       <main className="w-full bg-slate-900 text-white font-serif">
         <Intro />
-        <div className="z-50 bg-slate-900 absolute">
+        <div className="z-40 bg-slate-900 absolute">
           <Skills />
           <Experiences />
           <Projects />
