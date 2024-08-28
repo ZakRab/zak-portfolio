@@ -4,9 +4,10 @@ import Intro from "./components/Intro.jsx";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import AnimatedCursor from "react-animated-cursor";
+import Navigation from "./components/Navigation.jsx";
 function App() {
   return (
-    <div>
+    <div className="font-serif">
       <AnimatedCursor
         innerSize={10} // Size of the inner cursor dot
         outerSize={20} // Size of the outer cursor dot
@@ -37,13 +38,9 @@ function App() {
           },
         ]}
       />
-      <div className="text-white fixed flex flex-col w-full space-evenly gap-4 z-50 opacity-50 font-thin mt-5 ml-5">
-        <a href="#skills">Skills</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#projects">Projects</a>
-      </div>
 
-      <main className="w-full bg-slate-900 text-white font-serif">
+      <Navigation />
+      <main className="w-full bg-slate-900 text-white">
         <Intro />
         <div className="z-40 bg-slate-900 absolute">
           <Skills />
