@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -51,9 +51,10 @@ const Navigation = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: isScrolled ? 1 : 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
+      className=" "
     >
-      <div className="text-white fixed flex flex-col w-full space-evenly gap-4 z-50 font-light mt-5 ml-5">
+      <div className="text-white fixed flex flex-col w-full space-evenly gap-4 z-50 font-light mt-5 ml-7">
         <a href="#skills">Skills</a>
         <a href="#experiences">Experiences</a>
         <a href="#projects">Projects</a>

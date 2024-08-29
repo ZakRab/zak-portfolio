@@ -7,7 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 .active-link {
-  color: #ff69b4; /* Highlight color */
   font-weight: bold; /* Optional: make the link bold */
 }
 
