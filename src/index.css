@@ -9,11 +9,6 @@ html {
 .active-link {
   font-weight: bold; /* Optional: make the link bold */
 }
-section span {
-  display: block;
-  transform: translateX(-100px);
-  opacity: 0;
-}
 
 .parallax {
   overflow: hidden;
