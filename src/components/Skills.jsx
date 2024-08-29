@@ -14,6 +14,7 @@ import {
   BiLogoTailwindCss,
   BiLogoMongodb,
 } from "react-icons/bi";
+import { motion } from "framer-motion";
 // import { ReactComponent as SocketIo } from "../assets/socket.svg";
 
 import Skill from "./Skill";
@@ -101,7 +102,13 @@ function Skills() {
       name="skills"
       className="flex flex-col lg:px-40 sm:px-10 pt-20"
     >
-      <h1 className="text-5xl font-bold">Skills</h1>
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.7 }}
+        whileInView={{ opacity: 1 }}
+      >
+        <h1 className="text-5xl font-bold">Skills</h1>
+      </motion.div>
       <div className="grid gap-y-20 lg:grid-cols-4 sm:grid-cols-2 mt-20 justify-items-center mb-20">
         {skills.map((skill) => {
           return <Skill icon={skill.icon} name={skill.name} />;

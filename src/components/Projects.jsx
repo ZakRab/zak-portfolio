@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "./Project";
+import { motion } from "framer-motion";
 function Projects() {
   const projects = [
     {
@@ -60,7 +61,13 @@ function Projects() {
   return (
     <>
       <section id="projects" className="p-40">
-        <h1 className="text-5xl font-bold">Projects</h1>
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.7 }}
+          whileInView={{ opacity: 1 }}
+        >
+          <h1 className="text-5xl font-bold">Projects</h1>
+        </motion.div>
         <div className="mt-20 grid gap-4 lg:grid-cols-4 sm:grid-cols-2">
           {projects.map((project) => {
             return (
