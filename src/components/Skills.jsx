@@ -8,7 +8,7 @@ import {
   FaCss3,
   FaGit,
 } from "react-icons/fa";
-import { MdJavascript, MdCode } from "react-icons/md";
+import { MdJavascript } from "react-icons/md";
 import {
   BiLogoFlutter,
   BiLogoTailwindCss,
@@ -78,8 +78,16 @@ function Skills() {
       name: "Git",
     },
     {
-      icon: <span className="text-5xl">.Net</span>,
+      icon: <span className="text-7xl">.Net</span>,
       name: "Dot Net",
+    },
+    {
+      icon: <span className="text-7xl">Svelte</span>,
+      name: "Svelte",
+    },
+    {
+      icon: <span className="text-7xl">C</span>,
+      name: "Objective C",
     },
     // {
     //   icon: <SocketIo className="text-white" />,

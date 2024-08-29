@@ -20,11 +20,11 @@ function Projects() {
       title: "QwikQuiz",
       description:
         "An AI-powered test review platform that allows users to submit course curriculum and creates printable pdfs for students to review.",
-      techStack: ["Svelte", "Node", "Chat-GPT API", "Supabase/SQL"],
+      techStack: ["Svelte", "Chat-GPT API", "Supabase/SQL"],
       githubLink: "https://github.com/zakrab/QwikQuiz",
     },
     {
-      title: "Midland Spy Codes",
+      title: "Spy Codes",
       description:
         "Led the team in creating the final group project of a code names clone.",
       techStack: ["React", "Material UI", "Node", "Express", "Socket.io"],
@@ -34,18 +34,18 @@ function Projects() {
       title: "Uni-Search",
       description:
         "A full-stack application to help find universities I could apply to across the globe.",
-      techStack: ["JavaScript", "REST APIs"],
+      techStack: ["React", "REST APIs", "Node", "Express", "MongoDB"],
       githubLink: "https://github.com/zakrab/uni-search",
     },
     {
       title: "Noorish App",
       description:
-        "Noorish is a Flutter mobile application designed to assist Muslims in tracking their health and nutritional intake during the holy month of Ramadan.",
+        "A mobile application designed to assist Muslims in tracking their health and nutritional intake during the holy month of Ramadan.",
       techStack: ["Flutter", "Dart", "Rest APIs"],
       githubLink: "https://github.com/zakrab/noorish",
     },
     {
-      title: "Personal Portfolio",
+      title: " Portfolio",
       description: "My personal portfolio website.",
       techStack: ["React", "Tailwind CSS"],
       githubLink: "",
