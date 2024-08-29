@@ -43,7 +43,7 @@ export default function ParallaxText({ children, baseVelocity = 100 }) {
       directionFactor.current = 1;
     }
 
-    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+    moveBy += directionFactor.current * moveBy * velocityFactor.get() * 10;
 
     baseX.set(baseX.get() + moveBy);
   });

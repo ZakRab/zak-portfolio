@@ -41,9 +41,9 @@ function App() {
       />
 
       <Navigation />
-      <main className="w-full bg-slate-900 text-white">
+      <main className="w-full bg-slate-800 text-white">
         <Intro />
-        <div className="z-40 bg-slate-900 absolute">
+        <div className="z-40 bg-slate-700 absolute">
           <Experiences />
           <Skills />
           <Projects />

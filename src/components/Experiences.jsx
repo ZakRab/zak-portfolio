@@ -43,7 +43,7 @@ function Experiences() {
 
   return (
     <>
-      <section id="experiences" className=" px-40 pt-20">
+      <section id="experiences" className=" px-40 pt-40">
         <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 0.7 }}

@@ -6,11 +6,8 @@ function Intro() {
   return (
     <motion.div>
       <div className="h-screen w-full flex flex-col justify-center fixed">
-        <ParallaxText baseVelocity={2}>
+        <ParallaxText baseVelocity={0.5}>
           <span className="text-8xl">Zakaria Rab</span>
-        </ParallaxText>
-        <ParallaxText baseVelocity={-2}>
-          <span className="text-8xl"> Rab Zakaria </span>
         </ParallaxText>
         <motion.div
           initial={{ opacity: 0 }}
