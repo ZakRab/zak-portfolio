@@ -1,7 +1,7 @@
 import React from "react";
 import ParallaxText from "./ParallaxText.jsx";
 import { motion } from "framer-motion";
-
+import { MdKeyboardArrowDown } from "react-icons/md";
 function Intro() {
   return (
     <motion.div>
@@ -18,16 +18,17 @@ function Intro() {
           whileInView={{ opacity: 1 }}
         >
           <div className="flex justify-center">
-            <p className="font-semibold text-3xl mt-3">
+            <p className="font-semibold text-3xl mt-16">
               Full-Stack and Mobile Software Engineer
             </p>
           </div>
-          <div>
-            <p className="font-semibold text-3xl mt-3 text-center">
-              React | React Native | Node.js | Express | MongoDB
-            </p>
-          </div>
         </motion.div>
+        <a
+          href="#experiences"
+          className="bottom-5 absolute w-full flex justify-center"
+        >
+          <MdKeyboardArrowDown size={100} />
+        </a>
       </div>
       <div className="h-screen"></div>
     </motion.div>
