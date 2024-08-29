@@ -5,7 +5,7 @@ function Skill({ icon, name }) {
     <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
       <div className="flex flex-col text-center p-4">
         <div className="">{icon}</div>
-        <div className="mt-2">{name}</div>
+        <div className="mt-4">{name}</div>
       </div>
     </motion.div>
   );

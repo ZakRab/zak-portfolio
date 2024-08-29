@@ -26,7 +26,7 @@ function Projects() {
     {
       title: "Spy Codes",
       description:
-        "Led the team in creating the final group project of a code names clone.",
+        "Led my cohort in creating the final group project of a code names clone.",
       techStack: ["React", "Material UI", "Node", "Express", "Socket.io"],
       githubLink: "https://github.com/zakrab/QwikQuiz",
     },

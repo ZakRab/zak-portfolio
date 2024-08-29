@@ -70,10 +70,6 @@ function Skills() {
     },
 
     {
-      icon: <span className="text-5xl">SQL</span>,
-      name: "SQL",
-    },
-    {
       icon: <FaGit size={ICON_SIZE} />,
       name: "Git",
     },
@@ -84,6 +80,10 @@ function Skills() {
     {
       icon: <span className="text-7xl">Svelte</span>,
       name: "Svelte",
+    },
+    {
+      icon: <span className="text-7xl">SQL</span>,
+      name: "SQL",
     },
     {
       icon: <span className="text-7xl">C</span>,
@@ -101,7 +101,7 @@ function Skills() {
       name="skills"
       className="flex flex-col lg:px-40 sm:px-10 pt-20"
     >
-      <h1 className="text-5xl font-medium">Skills</h1>
+      <h1 className="text-5xl font-bold">Skills</h1>
       <div className="grid gap-y-20 lg:grid-cols-4 sm:grid-cols-2 mt-20 justify-items-center mb-20">
         {skills.map((skill) => {
           return <Skill icon={skill.icon} name={skill.name} />;

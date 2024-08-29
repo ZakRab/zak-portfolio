@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import AnimatedCursor from "react-animated-cursor";
 import Navigation from "./components/Navigation.jsx";
+import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <div className="font-serif">
@@ -46,6 +47,7 @@ function App() {
           <Skills />
           <Experiences />
           <Projects />
+          <Footer />
         </div>
       </main>
     </div>

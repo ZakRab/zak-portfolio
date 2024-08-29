@@ -1,21 +1,21 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 function Project({ title, description, techStack, githubLink }) {
   return (
-    <div className="flex flex-col mb-16 ">
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
       <a
         href={githubLink}
         target="_blank"
         rel="noreferrer"
-        className="text-3xl font-semibold"
+        className="flex flex-col gap-y-4 "
       >
-        {title}
+        <p className="text-3xl font-semibold">{title}</p>
+        <p className="text-2xl mt-2 font-medium">
+          {techStack.map((item) => item + " ")}
+        </p>
+        <p className="text-xl mt-4">{description}</p>
       </a>
-      <p className="text-2xl mt-2 font-medium">
-        {techStack.map((item) => item + " ")}
-      </p>
-      <p className="text-xl mt-4">{description}</p>
-    </div>
+    </motion.div>
   );
 }
 
