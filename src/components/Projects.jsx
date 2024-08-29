@@ -25,11 +25,11 @@ function Projects() {
       githubLink: "https://github.com/zakrab/QwikQuiz",
     },
     {
-      title: "Spy Codes",
+      title: "Spy Codes Game",
       description:
-        "Led my cohort in creating the final group project of a code names clone.",
+        "Led my cohort in creating the capstone project of the popular board game 'code names'.",
       techStack: ["React", "Material UI", "Node", "Express", "Socket.io"],
-      githubLink: "https://github.com/zakrab/QwikQuiz",
+      githubLink: "https://github.com/ZakRab/midland-spy-codes",
     },
     {
       title: "Uni-Search",
