@@ -2,7 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 function Project({ title, description, techStack, githubLink }) {
   return (
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.8 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+    >
       <a
         href={githubLink}
         target="_blank"

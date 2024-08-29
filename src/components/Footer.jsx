@@ -27,7 +27,12 @@ function Footer() {
     <div className="flex justify-center">
       <div className="flex gap-x-20 mb-7">
         {links.map((link, index) => (
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          >
             <a key={index} href={link.href} target="_blank" rel="noreferrer">
               {link.icon}
             </a>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Intro() {
   return (
-    <div>
+    <motion.div>
       <div className="h-screen flex flex-col justify-center fixed">
         <ParallaxText baseVelocity={2}>
           <span className="text-8xl">Zakaria Rab</span>
@@ -21,7 +21,7 @@ function Intro() {
         </motion.div>
       </div>
       <div className="h-screen flex flex-col justify-center"></div>
-    </div>
+    </motion.div>
   );
 }
 
