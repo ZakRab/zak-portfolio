@@ -7,11 +7,11 @@ function Project({ title, description, techStack, githubLink }) {
         href={githubLink}
         target="_blank"
         rel="noreferrer"
-        className="text-3xl underline font-semibold"
+        className="text-3xl font-semibold"
       >
         {title}
       </a>
-      <p className="text-xl mt-5">Built using: {techStack.toString()}</p>
+      <p className="text-xl mt-5">{techStack.map((item) => item + " ")}</p>
       <p className="text-xl mt-5">{description}</p>
     </div>
   );

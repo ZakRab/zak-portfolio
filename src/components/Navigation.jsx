@@ -1,6 +1,8 @@
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import { motion, useScroll } from "framer-motion";
 const Navigation = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -30,12 +32,33 @@ const Navigation = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="text-white fixed flex flex-col w-full space-evenly gap-4 z-50 font-light mt-5 ml-5">
-      <a href="#skills">Skills</a>
-      <a href="#experiences">Experiences</a>
-      <a href="#projects">Projects</a>
-    </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isScrolled ? 1 : 0 }}
+      transition={{ duration: 2 }}
+    >
+      <div className="text-white fixed flex flex-col w-full space-evenly gap-4 z-50 font-light mt-5 ml-5">
+        <a href="#skills">Skills</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </motion.div>
   );
 };
 

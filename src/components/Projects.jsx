@@ -12,15 +12,15 @@ function Projects() {
     {
       title: "3-2-1-Sketch",
       description:
-        "Created a live sketch party game made based upon the popular board game 'how do you doodle'.",
+        "A live sketch party game made based upon the popular board game 'how do you doodle'.",
       techStack: ["React", "Material UI", "Node", "Express", "Socket.io"],
       githubLink: "https://github.com/ZakRab/3-2-1-Sketch",
     },
     {
       title: "QwikQuiz",
       description:
-        "QuickQuiz is an AI-powered test review platform that allows users to submit course curriculum and creates printable pdfs for students to review.",
-      techStack: ["Svelte", "Node", "Chat GPT API", "SQL"],
+        "An AI-powered test review platform that allows users to submit course curriculum and creates printable pdfs for students to review.",
+      techStack: ["Svelte", "Node", "Chat-GPT API", "Supabase/SQL"],
       githubLink: "https://github.com/zakrab/QwikQuiz",
     },
     {
@@ -33,19 +33,19 @@ function Projects() {
     {
       title: "Uni-Search",
       description:
-        "Created a full-stack application to help find universities I could apply to across the globe. Utilizes REST APIs to retrieve data for over 9,000 colleges and universities.",
+        "A full-stack application to help find universities I could apply to across the globe.",
       techStack: ["JavaScript", "REST APIs"],
       githubLink: "https://github.com/zakrab/uni-search",
     },
     {
       title: "Noorish App",
       description:
-        "Noorish is a Flutter mobile application designed to assist Muslims in tracking their health and nutritional intake during the holy month of Ramadan. The app utilizes various APIs, including Alahdan.",
-      techStack: ["Flutter", "Dart", "APIs"],
+        "Noorish is a Flutter mobile application designed to assist Muslims in tracking their health and nutritional intake during the holy month of Ramadan.",
+      techStack: ["Flutter", "Dart", "Rest APIs"],
       githubLink: "https://github.com/zakrab/noorish",
     },
     {
-      title: "Portfolio",
+      title: "Personal Portfolio",
       description: "My personal portfolio website.",
       techStack: ["React", "Tailwind CSS"],
       githubLink: "",
@@ -61,7 +61,7 @@ function Projects() {
     <>
       <section id="projects" className="p-40">
         <h1 className="text-5xl font-bold">Projects</h1>
-        <div className="mt-10 grid gap-4 lg:grid-cols-4 sm:grid-cols-2">
+        <div className="mt-20 grid gap-4 lg:grid-cols-4 sm:grid-cols-2">
           {projects.map((project) => {
             return (
               <Project
