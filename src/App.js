@@ -44,8 +44,8 @@ function App() {
       <main className="w-full bg-slate-900 text-white">
         <Intro />
         <div className="z-40 bg-slate-900 absolute">
-          <Skills />
           <Experiences />
+          <Skills />
           <Projects />
           <Footer />
         </div>

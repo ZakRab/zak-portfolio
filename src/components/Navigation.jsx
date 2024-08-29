@@ -55,8 +55,8 @@ const Navigation = () => {
       className=" "
     >
       <div className="text-white fixed flex flex-col w-full space-evenly gap-4 z-50 font-light mt-5 ml-7">
-        <a href="#skills">Skills</a>
         <a href="#experiences">Experiences</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
       </div>
     </motion.div>
