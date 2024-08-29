@@ -8,8 +8,9 @@ const Navigation = () => {
       let currentSection = "";
 
       sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        if (sectionTop >= 0 && sectionTop < window.innerHeight / 2) {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop + 50) {
+          // Adjust offset for better timing
           currentSection = section.getAttribute("id");
         }
       });
@@ -21,6 +22,7 @@ const Navigation = () => {
         }
       });
     };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {

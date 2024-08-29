@@ -43,7 +43,7 @@ function Experiences() {
 
   return (
     <>
-      <div id="experiences" className=" px-40 pt-20">
+      <section id="experiences" className=" px-40 pt-20">
         <h1 className="text-5xl font-bold">Experiences</h1>
         <div className=" mt-20 ">
           {Experiences.map((experience) => {
@@ -58,7 +58,7 @@ function Experiences() {
             );
           })}
         </div>
-      </div>
+      </section>
     </>
   );
 }

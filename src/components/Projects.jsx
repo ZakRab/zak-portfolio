@@ -59,7 +59,7 @@ function Projects() {
   ];
   return (
     <>
-      <div id="projects" className="p-40">
+      <section id="projects" className="p-40">
         <h1 className="text-5xl font-bold">Projects</h1>
         <div className="mt-10 grid gap-4 lg:grid-cols-4 sm:grid-cols-2">
           {projects.map((project) => {
@@ -73,7 +73,7 @@ function Projects() {
             );
           })}
         </div>
-      </div>
+      </section>
     </>
   );
 }
