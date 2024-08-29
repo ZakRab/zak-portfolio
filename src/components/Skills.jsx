@@ -14,63 +14,72 @@ import {
   BiLogoTailwindCss,
   BiLogoMongodb,
 } from "react-icons/bi";
-import { ReactComponent as SocketIo } from "../assets/socket.svg";
+// import { ReactComponent as SocketIo } from "../assets/socket.svg";
 
 import Skill from "./Skill";
 function Skills() {
   const ICON_SIZE = 100;
   const skills = [
     {
-      icon: <FaHtml5 size={ICON_SIZE} />,
-      name: "HTML5",
-    },
-    {
-      icon: <FaGit size={ICON_SIZE} />,
-      name: "Git",
+      icon: <FaReact size={ICON_SIZE} />,
+      name: "React",
     },
     {
       icon: <FaJava size={ICON_SIZE} />,
       name: "Java",
     },
     {
-      icon: <FaPython size={ICON_SIZE} />,
-      name: "Python",
-    },
-    {
-      icon: <FaReact size={ICON_SIZE} />,
-      name: "React",
-    },
-    {
-      icon: <BiLogoTailwindCss size={ICON_SIZE} />,
-      name: "Tailwind CSS",
-    },
-    {
       icon: <FaNode size={ICON_SIZE} />,
       name: "Node.js",
     },
     {
-      icon: <FaCss3 size={ICON_SIZE} />,
-      name: "CSS3",
+      icon: <span className="text-8xl">C#</span>,
+      name: "C Sharp",
+    },
+    {
+      icon: <FaHtml5 size={ICON_SIZE} />,
+      name: "HTML5",
     },
     {
       icon: <BiLogoFlutter size={ICON_SIZE} />,
       name: "Flutter",
     },
+
+    {
+      icon: <FaPython size={ICON_SIZE} />,
+      name: "Python",
+    },
+
+    {
+      icon: <BiLogoTailwindCss size={ICON_SIZE} />,
+      name: "Tailwind CSS",
+    },
+
+    {
+      icon: <FaCss3 size={ICON_SIZE} />,
+      name: "CSS3",
+    },
+
     {
       icon: <MdJavascript size={ICON_SIZE} />,
       name: "JavaScript",
     },
     {
-      icon: <MdCode size={ICON_SIZE} />,
-      name: "Code",
-    },
-    {
       icon: <BiLogoMongodb size={ICON_SIZE} />,
       name: "MongoDB",
     },
+
     {
       icon: <span className="text-5xl">SQL</span>,
       name: "SQL",
+    },
+    {
+      icon: <FaGit size={ICON_SIZE} />,
+      name: "Git",
+    },
+    {
+      icon: <span className="text-5xl">.Net</span>,
+      name: "Dot Net",
     },
     // {
     //   icon: <SocketIo className="text-white" />,
