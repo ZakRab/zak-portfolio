@@ -7,19 +7,19 @@ const Navigation = () => {
   const links = [
     {
       href: "https://www.linkedin.com/in/zakaria-rab/",
-      icon: <FaLinkedin className="text-3xl" />,
+      icon: <FaLinkedin className="text-2xl" />,
     },
     {
       href: "https://github.com/ZakRab",
-      icon: <FaGithub className="text-3xl" />,
+      icon: <FaGithub className="text-2xl" />,
     },
     {
       href: "https://drive.google.com/file/d/1fLSACfyUPY2S3E2DwA7BguhRnqfpVI9h/view?usp=drive_link",
-      icon: <MdContactPage className="text-3xl" />,
+      icon: <MdContactPage className="text-2xl" />,
     },
     {
       href: "mailto:zakomaha@gmail.com?subject=HIRED!&amp;body=wow zak you are so amazing i want to hire you right now",
-      icon: <MdMail className="text-3xl" />,
+      icon: <MdMail className="text-2xl" />,
     },
   ];
   const [isScrolled, setIsScrolled] = useState(false);
@@ -75,21 +75,15 @@ const Navigation = () => {
       transition={{ duration: 1 }}
       className=" "
     >
-      <div className="text-white fixed flex flex-col w-full space-evenly gap-4 z-50 font-light mt-5 ml-7">
+      <div className="text-white fixed flex flex-col w-full w-20 space-evenly gap-7 z-50 font-light mt-5 ml-7">
         <a href="#experiences">Experiences</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <div></div>
         {links.map((link, index) => (
-          <motion.div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-          >
-            <a key={index} href={link.href} target="_blank" rel="noreferrer">
-              {link.icon}
-            </a>
-          </motion.div>
+          <a key={index} href={link.href} target="_blank" rel="noreferrer">
+            {link.icon}
+          </a>
         ))}
       </div>
     </motion.div>

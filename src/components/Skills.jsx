@@ -8,6 +8,8 @@ import {
   FaCss3,
   FaGit,
 } from "react-icons/fa";
+import { SiPostgresql } from "react-icons/si";
+
 import { MdJavascript } from "react-icons/md";
 import {
   BiLogoFlutter,
@@ -15,6 +17,9 @@ import {
   BiLogoMongodb,
 } from "react-icons/bi";
 import { motion } from "framer-motion";
+import { RiSvelteFill } from "react-icons/ri";
+import { AiOutlineDotNet } from "react-icons/ai";
+
 // import { ReactComponent as SocketIo } from "../assets/socket.svg";
 
 import Skill from "./Skill";
@@ -75,15 +80,15 @@ function Skills() {
       name: "Git",
     },
     {
-      icon: <span className="text-7xl">.Net</span>,
+      icon: <AiOutlineDotNet size={ICON_SIZE} />,
       name: "Dot Net",
     },
     {
-      icon: <span className="text-7xl">Svelte</span>,
+      icon: <RiSvelteFill size={ICON_SIZE} />,
       name: "Svelte",
     },
     {
-      icon: <span className="text-7xl">SQL</span>,
+      icon: <SiPostgresql size={ICON_SIZE} />,
       name: "SQL",
     },
     {
