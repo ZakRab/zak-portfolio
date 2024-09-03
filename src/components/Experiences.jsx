@@ -1,6 +1,5 @@
 import React from "react";
 import Experience from "./Experience";
-import { motion } from "framer-motion";
 function Experiences() {
   const Experiences = [
     {
@@ -43,28 +42,19 @@ function Experiences() {
 
   return (
     <>
-      <section id="experiences" className=" px-40 pt-40">
-        <motion.div
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.7 }}
-          whileInView={{ opacity: 1 }}
-        >
-          <h1 className="text-5xl font-bold">Experiences</h1>
-        </motion.div>
-        <div className=" mt-20 ">
-          {Experiences.map((experience) => {
-            return (
-              <Experience
-                title={experience.title}
-                company={experience.company}
-                startDate={experience.startDate}
-                endDate={experience.endDate}
-                description={experience.description}
-              />
-            );
-          })}
-        </div>
-      </section>
+      <div className="mt-20">
+        {Experiences.map((experience) => {
+          return (
+            <Experience
+              title={experience.title}
+              company={experience.company}
+              startDate={experience.startDate}
+              endDate={experience.endDate}
+              description={experience.description}
+            />
+          );
+        })}
+      </div>
     </>
   );
 }

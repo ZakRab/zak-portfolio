@@ -15,9 +15,9 @@ function Project({ title, description, techStack, githubLink }) {
         className="flex flex-col gap-y-4 "
       >
         <p className="text-3xl font-semibold">{title}</p>
-        <p className="text-2xl mt-2 font-medium">
+        {/* <p className="text-2xl mt-2 font-medium">
           {techStack.map((item) => item + " ")}
-        </p>
+        </p> */}
         <p className="text-xl mt-4">{description}</p>
       </a>
     </motion.div>

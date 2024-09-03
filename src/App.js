@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import AnimatedCursor from "react-animated-cursor";
 import Navigation from "./components/Navigation.jsx";
+import Section from "./components/Section.jsx";
 function App() {
   return (
     <div className="font-serif">
@@ -42,10 +43,14 @@ function App() {
       <Navigation />
       <main className="w-full bg-slate-800 text-white">
         <Intro />
-        <div className="z-40 bg-slate-700 absolute">
-          <Experiences />
-          <Skills />
-          <Projects />
+        <div className="z-40 bg-slate-700 absolute pt-28">
+          <Section id="projects" title={"Projects"} body={Projects}></Section>
+          <Section
+            id="experiences"
+            title={"Experience"}
+            body={Experiences}
+          ></Section>
+          <Section id="skills" title={"Skills"} body={Skills}></Section>
         </div>
       </main>
     </div>

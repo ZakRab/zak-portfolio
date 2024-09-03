@@ -1,6 +1,5 @@
 import React from "react";
 import Project from "./Project";
-import { motion } from "framer-motion";
 function Projects() {
   const projects = [
     {
@@ -43,7 +42,7 @@ function Projects() {
       description:
         "A mobile application designed to assist Muslims in tracking their health and nutritional intake during the holy month of Ramadan.",
       techStack: ["Flutter", "Dart", "Rest APIs"],
-      githubLink: "https://github.com/zakrab/noorish",
+      githubLink: "https://github.com/ZakRab/noorish_app",
     },
     {
       title: " Portfolio",
@@ -60,27 +59,18 @@ function Projects() {
   ];
   return (
     <>
-      <section id="projects" className="p-40">
-        <motion.div
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.7 }}
-          whileInView={{ opacity: 1 }}
-        >
-          <h1 className="text-5xl font-bold">Projects</h1>
-        </motion.div>
-        <div className="mt-20 grid gap-4 lg:grid-cols-4 sm:grid-cols-2">
-          {projects.map((project) => {
-            return (
-              <Project
-                title={project.title}
-                description={project.description}
-                techStack={project.techStack}
-                githubLink={project.githubLink}
-              />
-            );
-          })}
-        </div>
-      </section>
+      <div className="mt-28 grid gap-y-28 gap-x-16 lg:grid-cols-4 sm:grid-cols-2">
+        {projects.map((project) => {
+          return (
+            <Project
+              title={project.title}
+              description={project.description}
+              techStack={project.techStack}
+              githubLink={project.githubLink}
+            />
+          );
+        })}
+      </div>
     </>
   );
 }
