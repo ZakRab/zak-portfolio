@@ -44,13 +44,9 @@ function App() {
       <main className="w-full bg-slate-800 text-white">
         <Intro />
         <div className="z-40 bg-slate-700 absolute pt-28">
-          <Section id="projects" title={"Projects"} body={Projects}></Section>
-          <Section
-            id="experiences"
-            title={"Experience"}
-            body={Experiences}
-          ></Section>
-          <Section id="skills" title={"Skills"} body={Skills}></Section>
+          <Section title={"Projects"} body={Projects}></Section>
+          <Section title={"Experiences"} body={Experiences}></Section>
+          <Section title={"Skills"} body={Skills}></Section>
         </div>
       </main>
     </div>
