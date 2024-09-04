@@ -21,7 +21,7 @@ function Intro() {
           </div>
         </motion.div>
         <a
-          href="#experiences"
+          href="#Projects"
           className="bottom-5 absolute w-full flex justify-center"
         >
           <MdKeyboardArrowDown size={100} />

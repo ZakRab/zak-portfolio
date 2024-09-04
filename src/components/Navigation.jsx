@@ -32,7 +32,7 @@ const Navigation = () => {
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop) {
+        if (window.scrollY >= sectionTop + 300) {
           // Adjust offset for better timing
           currentSection = section.getAttribute("id");
         }
@@ -75,7 +75,7 @@ const Navigation = () => {
       transition={{ duration: 1 }}
       className=" "
     >
-      <div className="text-white fixed flex flex-col  w-20 space-evenly gap-7 z-50 font-light mt-5 ml-7">
+      <div className="text-white fixed flex flex-col w-20 space-evenly gap-7 z-50 font-light mt-5 ml-7">
         <a href="#Projects">Projects</a>
         <a href="#Experiences">Experiences</a>
         <a href="#Skills">Skills</a>
