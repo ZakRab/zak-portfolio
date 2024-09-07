@@ -28,7 +28,7 @@ function Projects() {
       title: "QwikQuiz",
       description:
         "An AI-powered test review platform that allows users to submit course curriculum and creates printable pdfs for students to review.",
-      techStack: ["Svelte", "Chat-GPT API", "sql", "node.js", "Tailwind CSS"],
+      techStack: ["Svelte", "Chat-GPT API", "sql", "Node.js", "Tailwind CSS"],
       githubLink: "https://github.com/zakrab/QwikQuiz",
       image: `${process.env.PUBLIC_URL}/assets/images/qwikquiz.png`,
     },
@@ -36,7 +36,7 @@ function Projects() {
       title: "Spy Codes",
       description:
         "Led my cohort in creating the capstone project of the popular board game 'code names'.",
-      techStack: ["React", "Bootstrap", "Node", "Express", "Socket.io"],
+      techStack: ["React", "Bootstrap", "Node.js", "Express", "Socket.io"],
       githubLink: "https://github.com/ZakRab/midland-spy-codes",
       image: `${process.env.PUBLIC_URL}/assets/images/spy-codes.png`,
     },
@@ -67,7 +67,7 @@ function Projects() {
       title: "Tawasul",
       isFeatured: true,
       description:
-        "A full-stack mobile application that connects single muslims with potential marriage partners.",
+        "A full-stack mobile application that connects single muslims with potential marriage partners. Tawasul is a matrimonial app specifically designed to cater to the unique needs of the Muslim community, focusing on creating meaningful, marriage-oriented connections.",
       techStack: ["Flutter", "Dart", "Supabase", "RiverPod", "Material UI"],
       image: `${process.env.PUBLIC_URL}/assets/images/tawasul.png`,
     },
@@ -89,7 +89,7 @@ function Projects() {
           return null;
         })}
       </div>
-      <div className="mt-28 grid gap-y-16 gap-x-16 lg:grid-cols-3 sm:grid-cols-1">
+      <div className="mt-28 grid gap-y-16 gap-x-16 lg:grid-cols-2 sm:grid-cols-1">
         {projects.map((project) => {
           if (!project.isFeatured) {
             return (
@@ -98,6 +98,7 @@ function Projects() {
                 description={project.description}
                 techStack={project.techStack}
                 image={project.image}
+                githubLink={project.githubLink}
               />
             );
           }

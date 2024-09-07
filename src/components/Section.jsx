@@ -12,6 +12,7 @@ function Section({ title, body }) {
         <h1 className="text-5xl font-bold">{title}</h1>
       </motion.div>
       <div className="my-20">{body()}</div>
+      <hr></hr>
     </section>
   );
 }

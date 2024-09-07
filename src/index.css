@@ -9,7 +9,11 @@ html {
 .active-link {
   font-weight: bold; /* Optional: make the link bold */
 }
-
+hr {
+  border-color: rgb(107 114 128);
+  background-color: rgb(107 114 128);
+  height: 1px;
+}
 .parallax {
   overflow: hidden;
   letter-spacing: -2px;
