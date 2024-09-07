@@ -1,5 +1,6 @@
 import React from "react";
-import Project from "./Project";
+import { Project, FeaturedProject } from "./Project";
+import aoeu from "../assets/Tawasul.png";
 function Projects() {
   const projects = [
     {
@@ -45,30 +46,56 @@ function Projects() {
       githubLink: "https://github.com/ZakRab/noorish_app",
     },
     {
-      title: " Portfolio",
+      title: "Portfolio",
       description: "My personal portfolio website.",
       techStack: ["React", "Tailwind CSS"],
       githubLink: "",
     },
     {
       title: "Tawasul App",
+      isFeatured: true,
       description:
         "A full-stack mobile application that connects single muslims with ponetial marriage partners.",
       techStack: ["Flutter", "Dart", "Supabase", "RiverPod", "Material UI"],
+      image: "../assets/Tawasul.png",
     },
   ];
   return (
     <>
+      <div className="mt-28 flex justify-center">
+        {projects.map((project) => {
+          if (project.isFeatured) {
+            return (
+              <FeaturedProject
+                title={project.title}
+                description={project.description}
+                techStack={project.techStack}
+                image={project.image}
+              ></FeaturedProject>
+            );
+          }
+        })}
+      </div>
       <div className="mt-28 grid gap-y-28 gap-x-16 lg:grid-cols-4 sm:grid-cols-2">
         {projects.map((project) => {
-          return (
-            <Project
-              title={project.title}
-              description={project.description}
-              techStack={project.techStack}
-              githubLink={project.githubLink}
-            />
-          );
+          if (!project.isFeatured) {
+            return (
+              <Project
+                title={project.title}
+                description={project.description}
+                techStack={project.techStack}
+              />
+            );
+          } else {
+            return (
+              <FeaturedProject
+                title={project.title}
+                description={project.description}
+                techStack={project.techStack}
+                image={project.image}
+              ></FeaturedProject>
+            );
+          }
         })}
       </div>
     </>
