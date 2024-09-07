@@ -75,11 +75,10 @@ const Navigation = () => {
       transition={{ duration: 1 }}
       className=" "
     >
-      <div className="text-white fixed flex flex-col w-20 space-evenly gap-7 z-50 font-light mt-5 ml-7">
-        <a href="#Projects">Projects</a>
+      <div className="text-white fixed flex flex-col w-24 space-evenly gap-7 z-50 font-light mt-5 ml-7">
+        <a href="#Personal Projects">Projects</a>
         <a href="#Experiences">Experiences</a>
         <a href="#Skills">Skills</a>
-        <hr></hr>
         {links.map((link, index) => (
           <a key={index} href={link.href} target="_blank" rel="noreferrer">
             {link.icon}

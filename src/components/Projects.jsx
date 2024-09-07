@@ -1,63 +1,75 @@
 import React from "react";
 import { Project, FeaturedProject } from "./Project";
-import aoeu from "../assets/Tawasul.png";
 function Projects() {
   const projects = [
     {
       title: "FitCast",
       description:
         "A smart digital wardrobe assistant designed to merge your clothing collection with live weather data for daily outfit recommendations.",
-      techStack: ["Svelte", "Supabase", "Git"],
+      techStack: [
+        "Svelte",
+        "Supabase",
+        "Tailwind CSS",
+        "OpenWeatherMap API",
+        "Node.js",
+      ],
       githubLink: "https://github.com/zakrab/fitcast",
+      image: `${process.env.PUBLIC_URL}/assets/images/fitcast.png`,
     },
     {
       title: "3-2-1-Sketch",
       description:
         "A live sketch party game made based upon the popular board game 'how do you doodle'.",
-      techStack: ["React", "Material UI", "Node", "Express", "Socket.io"],
-      githubLink: "https://github.com/ZakRab/3-2-1-Sketch",
+      techStack: ["React", "Bootstrap", "Node.js", "Express", "Socket.io"],
+      githubLink: "https://www.github.com/ZakRab/3-2-1-Sketch",
+      image: `${process.env.PUBLIC_URL}/assets/images/sketch.png`,
     },
     {
       title: "QwikQuiz",
       description:
         "An AI-powered test review platform that allows users to submit course curriculum and creates printable pdfs for students to review.",
-      techStack: ["Svelte", "Chat-GPT API", "Supabase/SQL"],
+      techStack: ["Svelte", "Chat-GPT API", "sql", "node.js", "Tailwind CSS"],
       githubLink: "https://github.com/zakrab/QwikQuiz",
+      image: `${process.env.PUBLIC_URL}/assets/images/qwikquiz.png`,
     },
     {
-      title: "Spy Codes Game",
+      title: "Spy Codes",
       description:
         "Led my cohort in creating the capstone project of the popular board game 'code names'.",
-      techStack: ["React", "Material UI", "Node", "Express", "Socket.io"],
+      techStack: ["React", "Bootstrap", "Node", "Express", "Socket.io"],
       githubLink: "https://github.com/ZakRab/midland-spy-codes",
+      image: `${process.env.PUBLIC_URL}/assets/images/spy-codes.png`,
     },
     {
       title: "Uni-Search",
       description:
         "A full-stack application to help find universities I could apply to across the globe.",
-      techStack: ["React", "REST APIs", "Node", "Express", "MongoDB"],
+      techStack: [
+        "React",
+        "REST APIs",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Bootstrap",
+      ],
       githubLink: "https://github.com/zakrab/uni-search",
+      image: `${process.env.PUBLIC_URL}/assets/images/unisearch.png`,
     },
     {
-      title: "Noorish App",
+      title: "Noorish",
       description:
         "A mobile application designed to assist Muslims in tracking their health and nutritional intake during the holy month of Ramadan.",
-      techStack: ["Flutter", "Dart", "Rest APIs"],
+      techStack: ["Flutter", "Dart", "Rest APIs", "Material UI"],
       githubLink: "https://github.com/ZakRab/noorish_app",
+      image: `${process.env.PUBLIC_URL}/assets/images/noorish.png`,
     },
     {
-      title: "Portfolio",
-      description: "My personal portfolio website.",
-      techStack: ["React", "Tailwind CSS"],
-      githubLink: "",
-    },
-    {
-      title: "Tawasul App",
+      title: "Tawasul",
       isFeatured: true,
       description:
-        "A full-stack mobile application that connects single muslims with ponetial marriage partners.",
+        "A full-stack mobile application that connects single muslims with potential marriage partners.",
       techStack: ["Flutter", "Dart", "Supabase", "RiverPod", "Material UI"],
-      image: "../assets/Tawasul.png",
+      image: `${process.env.PUBLIC_URL}/assets/images/tawasul.png`,
     },
   ];
   return (
@@ -74,9 +86,10 @@ function Projects() {
               ></FeaturedProject>
             );
           }
+          return null;
         })}
       </div>
-      <div className="mt-28 grid gap-y-28 gap-x-16 lg:grid-cols-4 sm:grid-cols-2">
+      <div className="mt-28 grid gap-y-16 gap-x-16 lg:grid-cols-3 sm:grid-cols-1">
         {projects.map((project) => {
           if (!project.isFeatured) {
             return (
@@ -84,18 +97,11 @@ function Projects() {
                 title={project.title}
                 description={project.description}
                 techStack={project.techStack}
+                image={project.image}
               />
             );
-          } else {
-            return (
-              <FeaturedProject
-                title={project.title}
-                description={project.description}
-                techStack={project.techStack}
-                image={project.image}
-              ></FeaturedProject>
-            );
           }
+          return null;
         })}
       </div>
     </>

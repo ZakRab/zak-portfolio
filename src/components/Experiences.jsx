@@ -10,6 +10,8 @@ function Experiences() {
       endDate: "August 2024",
       description:
         "Developed and enhanced HUDL's messaging platform using React, C#, and React Native, contributing to a more seamless user experience.",
+      image: `${process.env.PUBLIC_URL}/assets/images/hudl.png`,
+      isFeatured: true,
     },
     {
       title: "Software Engineering Intern",
@@ -42,7 +44,7 @@ function Experiences() {
 
   return (
     <>
-      <div className="mt-20">
+      <div className="mt-16">
         {Experiences.map((experience) => {
           return (
             <Experience
@@ -51,6 +53,8 @@ function Experiences() {
               startDate={experience.startDate}
               endDate={experience.endDate}
               description={experience.description}
+              image={experience.image}
+              techStack={experience.techStack}
             />
           );
         })}

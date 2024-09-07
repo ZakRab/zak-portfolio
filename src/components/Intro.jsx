@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MdKeyboardArrowDown } from "react-icons/md";
 function Intro() {
   return (
-    <motion.div>
+    <div className="sm:hidden md:contents">
       <div className="h-screen w-full flex flex-col justify-center fixed">
         <ParallaxText baseVelocity={0.5}>
           <span className="text-8xl">Zakaria Rab</span>
@@ -21,14 +21,14 @@ function Intro() {
           </div>
         </motion.div>
         <a
-          href="#Projects"
+          href="#Personal Projects"
           className="bottom-5 absolute w-full flex justify-center"
         >
           <MdKeyboardArrowDown size={100} />
         </a>
       </div>
-      <div className="h-screen"></div>
-    </motion.div>
+      <div className="h-screen w-full"></div>
+    </div>
   );
 }
 
