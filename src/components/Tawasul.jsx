@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { MdKeyboardArrowLeft } from "react-icons/md";
+import React, { useEffect } from "react";
+import { motion, useIsPresent } from "framer-motion";
+import { MdKeyboardArrowLeft, MdKeyboardArrowUp } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 import AnimatedCursor from "react-animated-cursor";
@@ -15,9 +15,14 @@ const images = {
   page2: `${process.env.PUBLIC_URL}/assets/images/tawasul/page2.png`,
 };
 function Tawasul() {
+  const isPresent = useIsPresent();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full font-serif bg-slate-700">
-      <Link to="/#Personal Projects" className="fixed top-5 left-5">
+      <Link to="/main/#Personal%20Projects" className="mt-10">
         <MdKeyboardArrowLeft size={50} color="white" />
       </Link>
       <AnimatedCursor
@@ -50,7 +55,7 @@ function Tawasul() {
           },
         ]}
       />
-      <div className="flex justify-center py-20">
+      <div className="flex justify-center pt-20 pb-10">
         <main className="flex flex-col items-center max-w-full md:max-w-screen-sm 1g:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen 1g:p-24 gap-36">
           {/* Introduction Section */}
           <motion.section
@@ -223,10 +228,23 @@ function Tawasul() {
                 reinforced the importance of adapting quickly, especially when
                 dealing with tight deadlines and multi-platform development.
               </p>
+              <div
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="mt-10 flex flex-col justify-center text-white"
+              >
+                <MdKeyboardArrowUp size={50} color="white" /> Scroll to top
+              </div>
             </div>
           </motion.section>
         </main>
       </div>
+      <motion.div
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
+        exit={{ scaleX: -1, transition: { duration: 0.5, ease: "circIn" } }}
+        style={{ originX: isPresent ? 0 : -1 }}
+        className="privacy-screen"
+      />
     </div>
   );
 }

@@ -6,8 +6,10 @@ import Projects from "./Projects";
 import Navigation from "./Navigation.jsx";
 import Section from "./Section.jsx";
 import AnimatedCursor from "react-animated-cursor";
-
+import { motion, useIsPresent } from "framer-motion";
 function Main() {
+  const isPresent = useIsPresent();
+
   return (
     <div className="font-serif">
       <AnimatedCursor
@@ -49,6 +51,13 @@ function Main() {
           <Section title={"Skills"} body={Skills}></Section>
         </div>
       </main>
+      <motion.div
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
+        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+        style={{ originX: isPresent ? 0 : 1 }}
+        className="privacy-screen"
+      />
     </div>
   );
 }
