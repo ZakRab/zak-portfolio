@@ -44,7 +44,7 @@ function Main() {
       />
       <Navigation />
       <main className="w-full bg-slate-800 text-white">
-        <Intro />
+        <Intro id="Intro" />
         <div className="z-40 bg-slate-700 absolute pt-28">
           <Section title={"Personal Projects"} body={Projects}></Section>
           <Section title={"Experiences"} body={Experiences}></Section>
