@@ -5,12 +5,12 @@ body {
   background-color: #333333;
   color: #f9f9f9;
 }
+/* .nav {
+  background-color: #333333;
+}
 .main {
   background-color: #333333;
-}
-.nav {
-  background-color: #333333;
-}
+} */
 .privacy-screen {
   position: fixed;
   top: 0;

@@ -11,7 +11,7 @@ function Main() {
   const isPresent = useIsPresent();
 
   return (
-    <div className="font-serif">
+    <div className="font-serif ">
       <AnimatedCursor
         innerSize={10} // Size of the inner cursor dot
         outerSize={20} // Size of the outer cursor dot
@@ -45,7 +45,7 @@ function Main() {
       <Navigation />
       <main className="w-full">
         <Intro />
-        <div className="z-40 absolute pt-28 main">
+        <div className="z-40 absolute pt-28 main bg-slate-800">
           <Section title={"Personal Projects"} body={Projects}></Section>
           <Section title={"Experiences"} body={Experiences}></Section>
           <Section title={"Skills"} body={Skills}></Section>

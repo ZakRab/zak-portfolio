@@ -69,32 +69,23 @@ const Navigation = () => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: isScrolled ? 1 : 0 }}
-      transition={{ duration: 0.2 }}
-      className="z-50 font-serif"
-    >
-      <div className="text-white fixed flex w-full z-50 font-light py-3 justify-around nav">
-        <div className="flex gap-10">
-          <a href="#Personal Projects">Proj.</a>
-          <a href="#Experiences">Exp.</a>
-          <a href="#Skills">Skills</a>
-        </div>
-        <div className="">
-          <a className="text-xl text-bold" href="#">
-            ZAKARIA RAB
-          </a>
-        </div>
-        <div className="flex flex-row gap-10">
-          {links.map((link, index) => (
-            <a key={index} href={link.href} target="_blank" rel="noreferrer">
-              {link.icon}
-            </a>
-          ))}
-        </div>
+    <div className="text-white fixed flex w-full z-50 font-light py-3 justify-around nav bg-slate-800">
+      <div className="flex gap-10">
+        <a href="#Personal Projects">Proj.</a>
+        <a href="#Experiences">Exp.</a>
+        <a href="#Skills">Skills</a>
       </div>
-    </motion.div>
+      <div className="">
+        <div className="text-xl text-bold">ZAKARIA RAB</div>
+      </div>
+      <div className="flex flex-row gap-10">
+        {links.map((link, index) => (
+          <a key={index} href={link.href} target="_blank" rel="noreferrer">
+            {link.icon}
+          </a>
+        ))}
+      </div>
+    </div>
   );
 };
 

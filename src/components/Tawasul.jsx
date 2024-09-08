@@ -21,10 +21,7 @@ function Tawasul() {
   }, []);
 
   return (
-    <div className="w-full font-serif bg-slate-700">
-      <Link to="/main/#Personal%20Projects" className="mt-10">
-        <MdKeyboardArrowLeft size={50} color="white" />
-      </Link>
+    <div className="w-full font-serif bg-slate-800">
       <AnimatedCursor
         innerSize={10} // Size of the inner cursor dot
         outerSize={20} // Size of the outer cursor dot
@@ -77,11 +74,11 @@ function Tawasul() {
                 </p>
               </div>
               <div className="flex flex-col lg:flex-row gap-16">
-                <div className="flex flex-row lg:flex-col flex-row gap-3">
+                <div className="flex flex-row lg:flex-col gap-3">
                   <p className="text-lg font-bold text-teal-400">TIMELINE</p>
                   <p className="text-lg text-white">June - July 2024</p>
                 </div>
-                <div className="flex flex-row lg:flex-col flex-row gap-3">
+                <div className="flex flex-row lg:flex-col gap-3">
                   <p className="text-lg font-bold text-teal-400">ROLE</p>
                   <p className="text-lg text-white">Project Architect</p>
                   <p className="text-lg text-white">Front-end Developer</p>

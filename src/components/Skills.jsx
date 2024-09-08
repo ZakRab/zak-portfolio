@@ -58,7 +58,7 @@ export const skills = {
 };
 function Skills() {
   return (
-    <div className="grid gap-y-20 lg:grid-cols-6 sm:grid-cols-3 mt-20 mb-20">
+    <div className="grid gap-y-20 lg:grid-cols-6 grid-cols-3 mt-20 mb-20">
       {Object.keys(skills).map((skill) => {
         return <Skill icon={skills[skill]} />;
       })}
