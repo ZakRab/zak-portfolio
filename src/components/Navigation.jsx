@@ -75,7 +75,7 @@ const Navigation = () => {
       transition={{ duration: 0.2 }}
       className="z-50 font-serif"
     >
-      <div className="text-white fixed flex w-full z-50 font-light py-3 justify-around   bg-slate-800">
+      <div className="text-white fixed flex w-full z-50 font-light py-3 justify-around nav">
         <div className="flex gap-10">
           <a href="#Personal Projects">Proj.</a>
           <a href="#Experiences">Exp.</a>

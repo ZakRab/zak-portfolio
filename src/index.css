@@ -2,6 +2,14 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #333333;
+  color: #f9f9f9;
+}
+.main {
+  background-color: #333333;
+}
+.nav {
+  background-color: #333333;
 }
 .privacy-screen {
   position: fixed;
