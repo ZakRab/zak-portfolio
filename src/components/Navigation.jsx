@@ -82,7 +82,7 @@ const Navigation = () => {
           <a href="#Skills">Skills</a>
         </div>
         <div className="">
-          <a className="text-xl text-bold" href="#Intro">
+          <a className="text-xl text-bold" href="#">
             ZAKARIA RAB
           </a>
         </div>

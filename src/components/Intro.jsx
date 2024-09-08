@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MdKeyboardArrowDown } from "react-icons/md";
 function Intro() {
   return (
-    <div className="sm:hidden md:contents">
+    <div id="Intro" className="sm:hidden md:contents">
       <div className="h-screen w-full flex flex-col justify-center fixed">
         <ParallaxText baseVelocity={0.5}>
           <span className="text-8xl">Zakaria Rab</span>
