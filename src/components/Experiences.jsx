@@ -8,10 +8,19 @@ function Experiences() {
       location: "Lincoln, Nebraska",
       startDate: "May 2024",
       endDate: "August 2024",
-      description:
-        "Developed and enhanced HUDL's messaging platform using React, C#, and React Native, contributing to a more seamless user experience.",
-      image: `${process.env.PUBLIC_URL}/assets/images/hudl.png`,
-      isFeatured: true,
+      techStack: [
+        "React",
+        "JavaScript",
+        "Node.js",
+        "SQL",
+        "C Sharp",
+        "Dot Net",
+        "CSS3",
+      ],
+      description: [
+        "Contributed to Hudl messaging web service, backend, Android, and iOS mobile applications leading to a significantly improved experience for thousands of users.",
+        "Delivered 12+ features to production for Hudl Messaging, including message editing, file attachments, and search functionality for users, groups, and messages.",
+      ],
     },
     {
       title: "Software Engineering Intern",
@@ -19,8 +28,12 @@ function Experiences() {
       location: "Toledo, Ohio",
       startDate: "July 2023",
       endDate: "December 2023",
-      description:
-        "Engineered AI-powered tools for medical professionals, utilizing Python and automated testing, while driving innovation through research on emerging technologies.",
+      techStack: ["Python", "Django", "React", "Javascript"],
+      description: [
+        "Contributed to AI medical startup by researching emerging technologies to incorporate into 4 different AI-powered note-generation tools for medical professionals.",
+        "Primarily contributed to a tool enabling doctors to voice record medical data, automatically summarizing it into notes, improving documentation efficiency by 80%.",
+        "Tested dozens of features manually and coded automated tests using Python unittest framework.",
+      ],
     },
     {
       title: "Student Developer",
@@ -28,8 +41,21 @@ function Experiences() {
       location: "Omaha, Nebraska",
       startDate: "June 2022",
       endDate: "August 2022",
-      description:
-        "Led a cohort in developing a capstone project using React, Node, Express, and SQL, while implementing PassportJS for secure authentication. Enhanced technical expertise and leadership skills, ensuring project success.",
+      techStack: [
+        "React",
+        "Node.js",
+        "Express",
+        "SQL",
+        "Socket.io",
+        "Bootstrap",
+        "Tailwind CSS",
+        "Javascript",
+      ],
+      description: [
+        "Attended an intensive 12-week web development software engineer boot camp full-time on scholarship.",
+        "Built 5+ full-stack applications with a focus on APIs, authentication, real-time sockets, and mobile-first design.",
+        "Elected by cohort to lead team of 6 student software engineers in developing a successful capstone project.",
+      ],
     },
     {
       title: "Database Intern",
@@ -37,8 +63,11 @@ function Experiences() {
       location: "Omaha, Nebraska",
       startDate: "March 2022",
       endDate: "May 2022",
-      description:
-        "Optimized database performance using SQL, collaborated on C# projects, and streamlined project management through AGILE methodologies with Atlassian tools.",
+      techStack: ["SQL", "C Sharp", "Dot NET"],
+      description: [
+        "Shadowed backend software engineers to learn basic programming and AGILE methodologies.",
+        "Collaborated with interns to complete tickets to obtain data from SQL tables using Atlassian and kanban.",
+      ],
     },
   ];
 

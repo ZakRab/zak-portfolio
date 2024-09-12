@@ -6,13 +6,7 @@ function Projects() {
       title: "FitCast",
       description:
         "A smart digital wardrobe assistant designed to merge your clothing collection with live weather data for daily outfit recommendations.",
-      techStack: [
-        "Svelte",
-        "Supabase",
-        "Tailwind CSS",
-        "OpenWeatherMap API",
-        "Node.js",
-      ],
+      techStack: ["Svelte", "Supabase", "Tailwind CSS", "Node.js"],
       githubLink: "https://github.com/zakrab/fitcast",
       image: `${process.env.PUBLIC_URL}/assets/images/fitcast.png`,
     },
@@ -28,7 +22,7 @@ function Projects() {
       title: "QwikQuiz",
       description:
         "An AI-powered test review platform that allows users to submit course curriculum and creates printable pdfs for students to review.",
-      techStack: ["Svelte", "Chat-GPT API", "sql", "Node.js", "Tailwind CSS"],
+      techStack: ["Svelte", "Node.js", "Tailwind CSS"],
       githubLink: "https://github.com/zakrab/QwikQuiz",
       image: `${process.env.PUBLIC_URL}/assets/images/qwikquiz.png`,
     },
@@ -44,14 +38,7 @@ function Projects() {
       title: "Uni-Search",
       description:
         "A full-stack application to help find universities I could apply to across the globe.",
-      techStack: [
-        "React",
-        "REST APIs",
-        "Node",
-        "Express",
-        "MongoDB",
-        "Bootstrap",
-      ],
+      techStack: ["React", "Node.js", "Express", "SQL", "Bootstrap"],
       githubLink: "https://github.com/zakrab/uni-search",
       image: `${process.env.PUBLIC_URL}/assets/images/unisearch.png`,
     },
@@ -59,7 +46,7 @@ function Projects() {
       title: "Noorish",
       description:
         "A mobile application designed to assist Muslims in tracking their health and nutritional intake during the holy month of Ramadan.",
-      techStack: ["Flutter", "Dart", "Rest APIs", "Material UI"],
+      techStack: ["Flutter", "Dart", "Material UI"],
       githubLink: "https://github.com/ZakRab/noorish_app",
       image: `${process.env.PUBLIC_URL}/assets/images/noorish.png`,
     },
@@ -68,7 +55,7 @@ function Projects() {
       isFeatured: true,
       description:
         "A full-stack mobile application that connects single muslims with potential marriage partners. Tawasul is a matrimonial app specifically designed to cater to the unique needs of the Muslim community, focusing on creating meaningful, marriage-oriented connections.",
-      techStack: ["Flutter", "Dart", "Supabase", "RiverPod", "Material UI"],
+      techStack: ["Flutter", "Dart", "Supabase", "Material UI"],
       image: `${process.env.PUBLIC_URL}/assets/images/tawasul.png`,
     },
   ];
