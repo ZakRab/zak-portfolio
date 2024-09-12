@@ -78,32 +78,33 @@ export function FeaturedProject({
   image,
 }) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <Link to="/tawasul">
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
-          <img
-            className="rounded-lg mb-10 border-2 border-gray-500"
-            src={image}
-            alt={image}
-          ></img>
-          <div className="flex flex-col gap-y-4 ">
-            <div className="flex w-full justify-between">
-              <p className="text-4xl font-semibold">{title}</p>
-
-              <div className="text-5xl font-medium flex gap gap-x-3">
-                {techStack.map((item) => {
-                  return skills[item];
-                })}
+    <div className="max-w-4xl">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Link to="/tawasul">
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.8 }}>
+            <p className="text-4xl font-semibold">{title}</p>
+            <img
+              className="rounded-lg my-10 border-2 border-gray-500"
+              src={image}
+              alt={image}
+            />
+            <div className="flex flex-col gap-y-4 ">
+              <div className="flex w-full justify-between">
+                <div className="text-5xl font-medium flex gap gap-x-3">
+                  {techStack.map((item) => {
+                    return skills[item];
+                  })}
+                </div>
               </div>
+              <p className="text-xl mt-4">{description}</p>
             </div>
-            <p className="text-2xl mt-4">{description}</p>
-          </div>
-        </motion.div>
-      </Link>
-    </motion.div>
+          </motion.div>
+        </Link>
+      </motion.div>
+    </div>
   );
 }
