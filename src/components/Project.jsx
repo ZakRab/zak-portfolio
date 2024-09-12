@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { skills } from "./Skills.jsx";
+import { Tooltip } from "react-tooltip";
 import { Link } from "react-router-dom";
 
 export function Project({ title, description, techStack, githubLink, image }) {
@@ -32,15 +33,27 @@ export function Project({ title, description, techStack, githubLink, image }) {
           >
             <img className="rounded-lg " src={image} alt={image}></img>
           </motion.div>
+
+          <hr className="mb-5"></hr>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <hr className="mb-5"></hr>
-            <div className="text-5xl font-medium flex gap gap-x-3">
+            <div className=" font-medium flex gap gap-x-3">
               {techStack.map((item) => {
-                return skills[item];
+                return (
+                  <>
+                    <a
+                      className="text-5xl"
+                      data-tooltip-id="project-tooltip"
+                      data-tooltip-content={item}
+                    >
+                      {skills[item]}
+                    </a>
+                    <Tooltip id="project-tooltip" />
+                  </>
+                );
               })}
             </div>
           </motion.div>

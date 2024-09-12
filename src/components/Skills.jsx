@@ -8,6 +8,7 @@ import {
   FaCss3,
   FaGit,
 } from "react-icons/fa";
+import { Tooltip } from "react-tooltip";
 
 import {
   SiC,
@@ -60,7 +61,14 @@ function Skills() {
   return (
     <div className="grid gap-y-20 lg:grid-cols-6 grid-cols-3 mt-20 mb-20">
       {Object.keys(skills).map((skill) => {
-        return <Skill icon={skills[skill]} />;
+        return (
+          <>
+            <a data-tooltip-id="skills-tooltip" data-tooltip-content={skill}>
+              <Skill icon={skills[skill]} />
+            </a>
+            <Tooltip id="skills-tooltip" place="bottom-start" />
+          </>
+        );
       })}
     </div>
   );
