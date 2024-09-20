@@ -6,7 +6,7 @@ function Projects() {
       title: "FitCast",
       description:
         "A smart digital wardrobe assistant designed to merge your clothing collection with live weather data for daily outfit recommendations.",
-      techStack: ["Svelte", "Supabase", "Tailwind CSS", "Node.js"],
+      techStack: ["React", "Supabase", "Tailwind CSS", "Node.js"],
       githubLink: "https://github.com/zakrab/fitcast",
       image: `${process.env.PUBLIC_URL}/assets/images/fitcast.png`,
     },
