@@ -45,7 +45,7 @@ function Projects() {
     {
       title: "Noorish",
       description:
-        "A mobile application designed to assist Muslims in tracking their health and nutritional intake during the holy month of Ramadan.",
+        "A mobile application built for the 2024 UNL CornHacks to assist Muslims in tracking their health and nutritional intake during the holy month of Ramadan using Google Machine Learning to scan and track meals.",
       techStack: ["Flutter", "Dart", "Material UI"],
       githubLink: "https://github.com/ZakRab/noorish_app",
       image: `${process.env.PUBLIC_URL}/assets/images/noorish.png`,
