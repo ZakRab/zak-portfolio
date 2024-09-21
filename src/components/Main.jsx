@@ -7,11 +7,14 @@ import Navigation from "./Navigation.jsx";
 import Section from "./Section.jsx";
 import AnimatedCursor from "react-animated-cursor";
 import { motion, useIsPresent } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
+
 function Main() {
   const isPresent = useIsPresent();
 
   return (
     <div className="font-serif ">
+      <Analytics />
       <AnimatedCursor
         innerSize={10} // Size of the inner cursor dot
         outerSize={20} // Size of the outer cursor dot

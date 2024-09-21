@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Main from "./components/Main";
 import Tawasul from "./components/Tawasul";
 import { AnimatePresence } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <BrowserRouter>
+      <Analytics />
       <AnimatedRoutes /> {/* Render the animated routes */}
     </BrowserRouter>
   );
