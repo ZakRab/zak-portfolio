@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdContactPage, MdMail } from "react-icons/md";
@@ -71,8 +70,8 @@ const Navigation = () => {
   return (
     <div className="text-white fixed flex w-full z-50 font-light py-3 justify-around nav bg-slate-800">
       <div className="flex gap-10">
-        <a href="#Personal Projects">Proj.</a>
-        <a href="#Experiences">Exp.</a>
+        <a href="#Personal Projects">Projects</a>
+        <a href="#Experiences">Experiences</a>
         <a href="#Skills">Skills</a>
       </div>
       <div className="">
