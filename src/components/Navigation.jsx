@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdContactPage, MdMail } from "react-icons/md";
+import { SiLeetcode } from "react-icons/si";
+
 const Navigation = () => {
   const links = [
     {
@@ -19,6 +21,10 @@ const Navigation = () => {
     {
       href: "mailto:zakomaha@gmail.com?subject=HIRED!&amp;body=wow zak you are so amazing i want to hire you right now",
       icon: <MdMail className="text-2xl" />,
+    },
+    {
+      href: "https://leetcode.com/u/ZakRab/",
+      icon: <SiLeetcode className="text-2xl" />,
     },
   ];
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,16 +74,21 @@ const Navigation = () => {
   }, []);
 
   return (
-    <div className="text-white fixed flex w-full z-50 font-light py-3 justify-around nav bg-slate-800">
-      <div className="flex gap-10">
+    <div className="text-white fixed flex w-full z-50 font-light py-3 justify-between items-center nav bg-slate-800">
+      {/* Left Side: Projects, Experiences, Skills */}
+      <div className="flex gap-8 flex-1 justify-center">
         <a href="#Personal Projects">Projects</a>
         <a href="#Experiences">Experiences</a>
         <a href="#Skills">Skills</a>
       </div>
-      <div className="">
-        <div className="text-xl text-bold">ZAKARIA RAB</div>
+
+      {/* Center: Name */}
+      <div className="flex-1 text-center">
+        <div className="text-xl font-bold">ZAKARIA RAB</div>
       </div>
-      <div className="flex flex-row gap-10">
+
+      {/* Right Side: Social/External Links */}
+      <div className="flex gap-8 flex-1 justify-center">
         {links.map((link, index) => (
           <a key={index} href={link.href} target="_blank" rel="noreferrer">
             {link.icon}
