@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { motion, useIsPresent } from "framer-motion";
-import { MdKeyboardArrowLeft, MdKeyboardArrowUp } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { MdKeyboardArrowUp } from "react-icons/md";
 
 import AnimatedCursor from "react-animated-cursor";
 const images = {
@@ -101,10 +100,10 @@ function Tawasul() {
                 Why did we create Tawasul?
               </h2>
               <p className="text-lg text-gray-400">
-                Tawasul isn't just another dating app—it's a platform built
-                around the cultural and religious needs of Muslims seeking
-                marriage. While other apps focus on superficial connections,
-                Tawasul ensures meaningful, faith-based relationships.
+                Tawasul is not dating app—it's a platform built around the
+                cultural and religious needs of Muslims seeking marriage. While
+                other apps focus on superficial connections, Tawasul ensures
+                meaningful, faith-based relationships.
               </p>
             </div>
           </motion.section>
