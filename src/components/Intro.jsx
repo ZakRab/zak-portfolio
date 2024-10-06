@@ -13,15 +13,15 @@ function Intro() {
   }, []);
 
   return (
-    <div id="Intro" className="relative h-screen w-full">
+    <div id="Intro" className=" h-screen w-full">
       {image && (
         <img
-          className="absolute inset-0 w-full h-full object-cover rounded-lg"
+          className="absolute inset-0 w-full h-full"
           src={image}
           alt="Niobrara Trip 2024"
         />
       )}
-      <div className="relative z-10 h-screen w-full flex flex-col justify-end text-white bg-black  bg-opacity-5 gap-8">
+      <div className="relative z-10 h-screen flex flex-col justify-end text-white bg-black  bg-opacity-5 gap-16">
         <div className="text-center">
           <a
             className="text-4xl sm:text-8xl"
