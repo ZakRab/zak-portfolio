@@ -15,7 +15,7 @@ const Navigation = () => {
       icon: <FaGithub className="text-2xl" />,
     },
     {
-      href: "https://drive.google.com/file/d/163iZBjpZ1sMedQgWgNaXKt0eklmsbQOH/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1ZiDb1C4H4LXFuPVH-adjrB22f1fHZY-3/view?usp=sharing",
       icon: <MdContactPage className="text-2xl" />,
     },
     {
